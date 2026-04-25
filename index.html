@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Julie TRAN | Portfolio BUT TC</title>
-  <meta
-    name="description"
-    content="Portfolio professionnel de Julie TRAN, étudiante en BUT 2 Techniques de Commercialisation."
-  >
+  <meta name="description"
+    content="Portfolio professionnel de Julie TRAN, étudiante en BUT 2 Techniques de Commercialisation.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="scroll-progress" aria-hidden="true">
+    <span class="scroll-progress-bar"></span>
+  </div>
+
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#accueil">JT</a>
+      <a class="brand" href="#accueil">Julie TRAN</a>
       <button class="menu-toggle" aria-label="Ouvrir le menu">
         <span></span>
         <span></span>
@@ -48,16 +51,16 @@
             Une étudiante en BUT Techniques de Commercialisation au service de votre
             stratégie, avec un réel sens du détail.
           </p>
-          <a class="btn btn-primary" href="#contact">Me contacter</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Me contacter</a>
+            <a class="btn btn-ghost" href="#competences">Voir mes projets</a>
+          </div>
         </div>
 
         <div class="hero-visual reveal">
           <div class="photo-ring">
             <div class="photo-frame">
-              <img
-                src="assets/photo.pro.pdf"
-                alt="Emplacement de la photo professionnelle de Julie TRAN"
-              >
+              <img src="assets/photo.pro.pdf" alt="Emplacement de la photo professionnelle de Julie TRAN">
             </div>
           </div>
         </div>
@@ -75,8 +78,8 @@
           <article class="card reveal">
             <h3>Qui suis-je ?</h3>
             <p>
-              Passionnée par l’aspect commercial et par la compréhension de la mise en
-              œuvre d’un produit final, j’ai voulu me spécialiser en parcours marketing
+              Passionnée par l’aspect commercial et le monde du digital, j’ai décidé de me spécialiser en parcours
+              marketing
               digital, e-business et entrepreneuriat.
             </p>
             <p>
@@ -86,9 +89,9 @@
             </p>
             <p>
               La raison pour laquelle j’ai rejoint ce parcours est aussi l’intérêt que
-              je porte pour les outils digitaux comme les logiciels de traitement de
-              texte et de création, ce qui me permet d’élaborer des supports visuels
-              stratégiques.
+              je porte pour les outils digitaux. Je me sens à l'aise lorsque j'utilise des logiciels de traitement de
+              texte ou de création, ce qui me permet d'être à la fois minutieuse et créative pour élaborer des supports
+              visuels stratégiques par exemple.
             </p>
           </article>
 
@@ -97,11 +100,12 @@
             <div class="objective-block">
               <h4>Dès maintenant :</h4>
               <p>
-                Acquérir de l’expérience et mettre mes compétences au service d'une entreprise/start-up à travers une alternance en marketing / communication digitale.
+                Acquérir de l’expérience et mettre mes compétences au service d'une entreprise/start-up à travers une
+                alternance en marketing / communication digitale.
               </p>
               <p>Période : 1er septembre 2026 au 3 septembre 2027
               </p>
-             <p>Rythme : 3j entreprise / 2j IUT
+              <p>Rythme : 3j entreprise / 2j IUT
               </p>
             </div>
             <div class="objective-block">
@@ -112,12 +116,9 @@
                 de faciliter mon insertion professionnelle.
               </p>
             </div>
-            <a
-              class="btn btn-secondary"
+            <a class="btn btn-secondary"
               href="https://drive.google.com/file/d/1l3nx8Qtat0Ljt3kumelnms4KD2UzAWo_/view?usp=share_link"
-              target="_blank"
-              rel="noreferrer"
-            >
+              target="_blank" rel="noreferrer">
               Télécharger le CV
             </a>
           </article>
@@ -131,36 +132,52 @@
           <h2>Parcours académique</h2>
         </div>
 
-        <div class="academic-grid">
-          <article class="academic-card reveal">
-            <a
-              class="academic-logo"
-              href="https://iutparis-seine.u-paris.fr"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Visiter le site de l'IUT Paris Rives de Seine"
-            >
-              <img
-                src="assets/logo iut paris rives de seine.jpg"
-                alt="Logo de l'IUT Paris Rives de Seine"
-              >
-            </a>
-            <h3>BUT Techniques de Commercialisation</h3>
-            <p class="academic-subtitle">Parcours Marketing digital, e-business et entrepreneuriat</p>
-            <p class="academic-year">2024 - 2026</p>
+        <div class="academic-journey reveal">
+          <div class="journey-line" aria-hidden="true"></div>
+
+          <article class="journey-step current-step">
+            <div class="journey-marker" aria-hidden="true"></div>
+            <div class="journey-card">
+              <div class="journey-meta">
+                <p class="journey-period">En cours - 2024</p>
+              </div>
+
+              <div class="journey-body">
+                <a class="academic-logo" href="https://iutparis-seine.u-paris.fr" target="_blank" rel="noreferrer"
+                  aria-label="Visiter le site de l'IUT Paris Rives de Seine">
+                  <img class="academic-logo-main" src="assets/logo iut paris rives de seine.jpg"
+                    alt="Logo de l'IUT Paris Rives de Seine">
+                </a>
+
+                <div class="journey-copy">
+                  <h3>BUT Techniques de Commercialisation</h3>
+                  <p class="academic-subtitle">Parcours Marketing digital, e-business et entrepreneuriat</p>
+                  <p class="journey-campus">IUT Paris - Rives de Seine</p>
+                </div>
+              </div>
+            </div>
           </article>
 
-          <article class="academic-card reveal">
-            <div class="academic-logo">
-              <img
-                class="academic-logo-small"
-                src="assets/logo la salle saint-rosaire.png"
-                alt="Logo du second établissement"
-              >
+          <article class="journey-step previous-step">
+            <div class="journey-marker" aria-hidden="true"></div>
+            <div class="journey-card">
+              <div class="journey-meta">
+                <p class="journey-period">2024 - 2022</p>
+              </div>
+
+              <div class="journey-body">
+                <div class="academic-logo">
+                  <img class="academic-logo-small" src="assets/logo la salle saint-rosaire.png"
+                    alt="Logo de La Salle Saint-Rosaire">
+                </div>
+
+                <div class="journey-copy">
+                  <h3>BAC STMG</h3>
+                  <p class="academic-subtitle">Spécialité marketing et option EPS</p>
+                  <p class="journey-campus">La Salle Saint-Rosaire</p>
+                </div>
+              </div>
             </div>
-            <h3>BAC STMG</h3>
-            <p class="academic-subtitle">Spécialité marketing et option EPS</p>
-            <p class="academic-year">2022 - 2024</p>
           </article>
         </div>
       </div>
@@ -180,48 +197,116 @@
               <h3>Développer la relation client et réaliser la vente conseil</h3>
             </div>
             <p class="skill-definition">
-              Cette compétence vise à maîtriser les techniques commerciales et la relation client omnicanale, en mobilisant des outils de prospection et d’argumentation afin de conclure une vente.
+              Cette compétence vise à maîtriser les techniques commerciales et la relation client omnicanale, en
+              mobilisant des outils de prospection et d’argumentation afin de conclure une vente.
             </p>
 
-            <div class="skill-content">
-              <div class="skill-main">
-                <h4>Ce que je maîtrise</h4>
-                <ul class="list-check">
-                  <li>Maîtrise de l’argumentaire de vente</li>
-                  <li>Mettre en valeur une offre commerciale avec une approche conseil</li>
-                  <li>Vente en face-à-face</li>
-                </ul>
+            <div class="skill-mastery">
+              <h4>Compétences maîtrisées</h4>
+              <ul class="list-check">
+                <li>Maîtrise de l’argumentaire de vente</li>
+                <li>Mettre en valeur une offre commerciale avec une approche conseil</li>
+                <li>Vente en face-à-face</li>
+              </ul>
+            </div>
 
-                <div class="reflection-box">
-                  <h4>Analyse réflexive</h4>
-                  <p>
-                    Ce stage chez JOTT m’a permis de découvrir les codes de travail dans l’univers du prêt-à-porter et d’acquérir de l’expérience en vente. Je me suis servie de la méthode SONCASE vue en cours de négociation afin d’adapter mes arguments en valorisant les produits de la marque (qualité française, certification RDS par exemple). 
-Étant une personne timide, cette expérience m’a poussée à lever mes barrières en initiant une première approche vers le client afin de contribuer à l’expérience d’achat des clients en boutique.
+            <div class="challenge-module" data-carousel>
+              <div class="challenge-head">
+                <h4 class="challenge-title" data-carousel-title>Ticket de vente (preuve d’encaissement réalisée)</h4>
+                <div class="challenge-controls">
+                  <button class="challenge-arrow" type="button" aria-label="Voir la réalisation précédente"
+                    data-carousel-prev>&lt;</button>
+                  <p class="challenge-count"><span data-carousel-current>1</span> / <span data-carousel-total>3</span>
                   </p>
+                  <button class="challenge-arrow" type="button" aria-label="Voir la réalisation suivante"
+                    data-carousel-next>&gt;</button>
                 </div>
               </div>
 
-              <div>
-                <div class="proof-grid">
-                  <div class="proof-card" title="Ajouter une image JPG">
-                    <img
-                      src="assets/ticket.jpg"
-                      alt="Preuve visuelle 1 du bloc Développer la relation client"
-                    >
-                    <p class="proof-description">
-                      Ticket de vente (preuve d’encaissement réalisée)
-                    </p>
-                  </div>
-                  <div class="proof-card" title="Ajouter une image JPG">
-                    <img
-                      src="assets/soncase.png.png"
-                      alt="Preuve visuelle 2 du bloc Développer la relation client"
-                    >
-                    <p class="proof-description">
-                      Outil SONCASE complété pour la marque JOTT
-                    </p>
-                  </div>
+              <div class="challenge-viewport">
+                <div class="challenge-slides" data-carousel-track>
+                  <article class="challenge-slide is-active"
+                    data-slide-title="Ticket de vente (preuve d’encaissement réalisée)"
+                    data-slide-reflection="Ce stage chez JOTT constitue ma première expérience professionnelle. En effet, cela m'a permis de découvrir les codes de travail dans l’univers du prêt-à-porter et d’acquérir de l’expérience en vente. Étant une personne timide, cette expérience m’a poussée à lever mes barrières en initiant une première approche vers le client afin de contribuer à l’expérience d’achat des clients en boutique. Un premier pas sur le terrain qui me motive à en apprendre plus pour la suite !">
+                    <div class="challenge-layout">
+                      <div class="challenge-copy">
+                        <div class="challenge-item">
+                          <h5>Contexte</h5>
+                          <p>Stage réalisé pendant 1 mois en tant que conseillère de vente à JOTT dans la boutique du
+                            marais, lors de la première année de BUT TC.</p>
+                        </div>
+
+                        <div class="challenge-item">
+                          <h5>Problématique</h5>
+                          <p>Comment contribuer à l'expérience d'achat des clients en boutique à travers une vente en
+                            face-à-face et une posture commerciale adaptée ?</p>
+                        </div>
+
+                        <div class="challenge-item">
+                          <h5>Démarche employée</h5>
+                          <p>Les cours de techniques de vente m'ont permis d'avoir les premières connaissances pour
+                            aborder un client, analyser son comportement et adapter ma communication en fonction de
+                            celui-ci, que j'ai pu appliquer dans ce contexte.</p>
+                        </div>
+
+                        <div class="challenge-item challenge-item-result">
+                          <h5>RÉSULTAT : TICKET DE VENTE (PREUVE D’ENCAISSEMENT RÉALISÉE).</h5>
+                        </div>
+                      </div>
+
+                      <div class="challenge-visual">
+                        <img src="assets/ticket.jpg"
+                          alt="Preuve visuelle du ticket de vente pour le bloc relation client">
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="challenge-slide" data-slide-title="Outil SONCASE complété pour la marque JOTT"
+                    data-slide-reflection="Réaliser cet exercice m'a permis de mettre en pratique la méthode SONCASE vue en cours de négociation dans un contexte réel. J'ai pu mieux comprendre l'importance d'adapter son discours en fonction des motivations de chacun pour valoriser les produits de la marque. Cette expérience m'a également appris à être plus à l'écoute et plus réactive face aux besoins du client.">
+                    <div class="challenge-layout">
+                      <div class="challenge-copy">
+                        <div class="challenge-item">
+                          <h5>Contexte</h5>
+                          <p>Stage réalisé pendant 1 mois en tant que conseillère de vente à JOTT dans la boutique du
+                            marais, lors de la première année de BUT TC.</p>
+                        </div>
+
+                        <div class="challenge-item">
+                          <h5>Problématique</h5>
+                          <p>Comment adapter des arguments de vente en fonction des motivations du client pour valoriser
+                            les produits d'une marque ?</p>
+                        </div>
+
+                        <div class="challenge-item">
+                          <h5>Démarche employée</h5>
+                          <p>Je me suis servie de la méthode SONCASE vue en cours de négociation afin d’adapter mes
+                            arguments en valorisant les produits de la marque (qualité française, certification RDS par
+                            exemple).</p>
+                        </div>
+
+                        <div class="challenge-item challenge-item-result">
+                          <h5>RÉSULTAT : OUTIL SONCASE COMPLÉTÉ POUR LA MARQUE JOTT.</h5>
+                        </div>
+                      </div>
+
+                      <div class="challenge-visual">
+                        <img src="assets/soncase.png.png" alt="Preuve visuelle de l'outil SONCASE pour la marque JOTT">
+                      </div>
+                    </div>
+                  </article>
                 </div>
+              </div>
+
+              <div class="reflection-box challenge-reflection">
+                <h4>Conclusion réflexive</h4>
+                <p data-carousel-reflection>
+                  Ce stage chez JOTT constitue ma première expérience professionnelle. En effet, cela m'a permis de
+                  découvrir les codes de travail dans l’univers du prêt-à-porter et
+                  d’acquérir de l’expérience en vente.
+                  Étant une personne timide, cette expérience m’a poussée à lever mes barrières en initiant une première
+                  approche vers le client afin de contribuer à l’expérience d’achat des clients en boutique. Un premier
+                  pas sur le terrain qui me motive à en apprendre plus pour la suite !
+                </p>
               </div>
             </div>
           </article>
@@ -232,48 +317,158 @@
               <h3>Piloter la communication commerciale</h3>
             </div>
             <p class="skill-definition">
-              Cette compétence consiste à concevoir et déployer une stratégie de communication afin de promouvoir une offre, en créant des supports visuels adaptés aux objectifs et à la cible.
+              Cette compétence consiste à concevoir et déployer une stratégie de communication afin de promouvoir une
+              offre, en créant des supports visuels adaptés aux objectifs et à la cible.
             </p>
 
-            <div class="skill-content">
-              <div class="skill-main">
-                <h4>Ce que je maîtrise</h4>
-                <ul class="list-check">
-                  <li>Conception de visuels</li>
-                  <li>Élaboration d’une campagne publicitaire pour la promotion d’un festival fictif</li>
-                  <li>Communiquer une offre commerciale via un canal digital</li>
-                </ul>
+            <div class="skill-mastery">
+              <h4>Compétences maîtrisées</h4>
+              <ul class="list-check">
+                <li>Création de supports de communication</li>
+                <li>Stratégie de contenus</li>
+                <li>Création de site web</li>
+              </ul>
+            </div>
 
-                <div class="reflection-box">
-                  <h4>Analyse réflexive</h4>
-                  <p>
-                    Ce cas pratique m’a permis de réfléchir à la mise en œuvre d’actions de communication pour promouvoir un festival de manière cohérente, en fonction de l’analyse du marché que mon groupe et moi avons réalisé. 
-Cet exercice a mis en pratique mes compétences en organisation et stratégie événementielle/de communication.
+            <div class="challenge-module" data-carousel>
+              <div class="challenge-head">
+                <h4 class="challenge-title" data-carousel-title>Affiche promotionnelle conçue pour le festival fictif
+                  Let’s Seine</h4>
+                <div class="challenge-controls">
+                  <button class="challenge-arrow" type="button" aria-label="Voir la réalisation précédente"
+                    data-carousel-prev>&lt;</button>
+                  <p class="challenge-count"><span data-carousel-current>1</span> / <span data-carousel-total>3</span>
                   </p>
+                  <button class="challenge-arrow" type="button" aria-label="Voir la réalisation suivante"
+                    data-carousel-next>&gt;</button>
                 </div>
               </div>
 
-              <div>
-                <div class="proof-grid">
-                  <div class="proof-card" title="Ajouter une image JPG">
-                    <img
-                      src="assets/affiche lets seine.png.png"
-                      alt="Preuve visuelle 1 du bloc Piloter la communication commerciale"
-                    >
-                    <p class="proof-description">
-                      Affiche promotionnelle conçue pour le festival fictif Let’s Seine
-                    </p>
-                  </div>
-                  <div class="proof-card" title="Ajouter une image JPG">
-                    <img
-                      src="assets/wingo.png.png"
-                      alt="Preuve visuelle 2 du bloc Piloter la communication commerciale"
-                    >
-                    <p class="proof-description">
-                      Support visuel complémentaire réalisé dans le cadre de la campagne
-                    </p>
-                  </div>
+              <div class="challenge-viewport">
+                <div class="challenge-slides" data-carousel-track>
+                  <article class="challenge-slide is-active"
+                    data-slide-title="Affiche promotionnelle conçue pour le festival fictif Let’s Seine"
+                    data-slide-reflection="Ce cas pratique m’a permis de réfléchir à la mise en œuvre d’actions de communication pour promouvoir un festival de manière cohérente, en fonction de l’analyse du marché que mon groupe et moi avons réalisé. Cet exercice a mis en pratique mes compétences en organisation et stratégie événementielle/de communication.">
+                    <div class="challenge-layout">
+                      <div class="challenge-copy">
+                        <div class="challenge-item">
+                          <h5>Contexte</h5>
+                          <p>Cas pratique en ressource campagne de communication digitale (projet groupe) : présentation
+                            d'un nouveau festival musical.</p>
+                        </div>
+
+                        <div class="challenge-item">
+                          <h5>Problématique</h5>
+                          <p>Comment élaborer une stratégie de communication cohérente et des supports visuels adaptés
+                            pour promouvoir efficacement une offre ?</p>
+                        </div>
+
+                        <div class="challenge-item">
+                          <h5>Démarche employée</h5>
+                          <p>J'ai créé cette affiche publicitaire au format panneau vertical, en respectant une
+                            hiérarchie visuelle claire et une cohérence graphique adaptée à l'identité festive de
+                            l'événement, pour que les informations essentielles soient lisibles et percutantes au
+                            premier regard.</p>
+                        </div>
+
+                        <div class="challenge-item challenge-item-result">
+                          <h5>RÉSULTAT : AFFICHE PROMOTIONNELLE POUR LE FESTIVAL FICTIF LET’S SEINE.</h5>
+                        </div>
+                      </div>
+
+                      <div class="challenge-visual">
+                        <img src="assets/affiche lets seine.png.png"
+                          alt="Affiche promotionnelle du festival fictif Let’s Seine">
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="challenge-slide"
+                    data-slide-title="Support visuel complémentaire réalisé dans le cadre de la campagne"
+                    data-slide-reflection="Réaliser ce support visuel m'a permis une nouvelle fois de mettre en pratique mes compétences en création de supports visuels dans un contexte de campagne de communication digitale. J'ai pu m'entraîner à réaliser des affiches pour promouvoir des actions de communication, ce qui me sera utile dans mes futures expériences professionnelles.">
+                    <div class="challenge-layout">
+                      <div class="challenge-copy">
+                        <div class="challenge-item">
+                          <h5>Contexte</h5>
+                          <p>Cas pratique en ressource campagne de communication digitale (projet groupe): présentation
+                            d'un nouveau festival musical.</p>
+                        </div>
+
+                        <div class="challenge-item">
+                          <h5>Problématique</h5>
+                          <p>Comment mettre en valeur la mascotte d'un festival et inciter le public à participer pour
+                            obtenir des goodies à travers un support digital ?</p>
+                        </div>
+
+                        <div class="challenge-item">
+                          <h5>Démarche employée</h5>
+                          <p>J'ai réalisé une affiche au format vertical qui pourrait être publiée sur les réseaux
+                            sociaux et mise en story à la une, en mettant bien en avant la mascotte du festival et
+                            l'annonce des goodies à recevoir.
+                          </p>
+                        </div>
+
+                        <div class="challenge-item challenge-item-result">
+                          <h5>RÉSULTAT : SUPPORT VISUEL COMPLÉMENTAIRE RÉALISÉ DANS LE CADRE DE LA CAMPAGNE.</h5>
+                        </div>
+                      </div>
+
+                      <div class="challenge-visual">
+                        <img src="assets/wingo.png.png"
+                          alt="Support visuel complémentaire pour la campagne de communication">
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="challenge-slide challenge-slide-reflection-tight"
+                    data-slide-title="Création de site web avec Shopify"
+                    data-slide-reflection="Découvrir et apprendre en quelques jours à utiliser Shopify pour créer un site vitrine était particulièrement intéressant dans le cadre de cette SAE. Cette mise en situation m'a permis d'apprendre seule les fonctionnalités de ce logiciel et d'imaginer une interface claire et pertinente pour une boulangerie. Je me suis servie de mes notions vues en e-commerce et en communication digitale, et ce projet m'a permis de savoir mettre en avant des offres de manière attractive et cohérente avec l'identité de la marque.">
+                    <div class="challenge-layout challenge-layout-result-below">
+                      <div class="challenge-copy">
+                        <div class="challenge-item">
+                          <h5>Contexte</h5>
+                          <p>Projet de la SAE en équipe durant la 2ème année de BUT TC : création d'un site web pour une
+                            boulangerie afin de renforcer sa visibilité digitale.
+                          </p>
+                        </div>
+
+                        <div class="challenge-item">
+                          <h5>Problématique</h5>
+                          <p>Comment concevoir une interface claire, attractive et cohérente pour valoriser une offre en
+                            ligne ?</p>
+                        </div>
+
+                        <div class="challenge-item">
+                          <h5>Démarche employée</h5>
+                          <p>Je me suis occupée de la conception du site, d'établir une charte visuelle, d'intégrer des
+                            contenus en valorisant les offres avec des bandeaux commerciaux.</p>
+                        </div>
+
+                        <div class="challenge-item challenge-item-result">
+                          <h5>RÉSULTAT : CRÉATION DE SITE WEB AVEC SHOPIFY.</h5>
+                        </div>
+                      </div>
+
+                      <div class="challenge-visual">
+                        <video autoplay muted loop playsinline>
+                          <source src="assets/saesiteweb2.mov" type="video/quicktime">
+                          Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+                        </video>
+                      </div>
+                    </div>
+                  </article>
                 </div>
+              </div>
+
+              <div class="reflection-box challenge-reflection">
+                <h4>Conclusion réflexive</h4>
+                <p data-carousel-reflection>
+                  Ce cas pratique m’a permis de réfléchir à la mise en œuvre d’actions de communication pour promouvoir
+                  un festival de manière cohérente, en fonction de l’analyse du marché que mon groupe et moi avons
+                  réalisé.
+                  Cet exercice a mis en pratique mes compétences en organisation et stratégie événementielle/de
+                  communication.
+                </p>
               </div>
             </div>
           </article>
@@ -283,96 +478,54 @@ Cet exercice a mis en pratique mes compétences en organisation et stratégie é
           <h2>Mes outils de travail</h2>
         </div>
 
-        <div class="tools-grid">
-          <article class="tool-card reveal">
+        <div class="tools-grid reveal">
+          <article class="tool-card">
             <h3>Outils bureautiques</h3>
-            <p>Suite Office 365, iWork, Google Workspace</p>
-            <div class="brand-logos" aria-label="Logos outils bureautiques">
-              <img
-                class="app-logo"
-                src="assets/excel.png"
-                alt="Logo de l'application Excel"
-              >
-              <img
-                class="app-logo"
-                src="assets/powerpoint.png"
-                alt="Logo de l'application PowerPoint"
-              >
-              <img
-                class="app-logo"
-                src="assets/word.jpg"
-                alt="Logo de l'application Word"
-              >
-              <img
-                class="app-logo"
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/New_Pages_icon.png"
-                alt="Logo de l'application Pages"
-              >
-              <img
-                class="app-logo"
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/KeynoteACS2026.png"
-                alt="Logo de l'application Keynote"
-              >
-              <img
-                class="app-logo"
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/Numbers_iOS.svg"
-                alt="Logo de l'application Numbers"
-              >
-              <img
-                class="app-logo app-logo-wide"
+            <p class="tool-card-subtitle">Microsoft 365, iWork, Google Workspace</p>
+            <div class="brand-logos" aria-label="Logos des outils bureautiques">
+              <img class="app-logo" src="assets/word.jpg" alt="Logo Word">
+              <img class="app-logo" src="assets/excel.png" alt="Logo Excel">
+              <img class="app-logo" src="assets/powerpoint.png" alt="Logo PowerPoint">
+              <img class="app-logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/New_Pages_icon.png"
+                alt="Logo Pages">
+              <img class="app-logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Numbers_iOS.svg"
+                alt="Logo Numbers">
+              <img class="app-logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/KeynoteACS2026.png"
+                alt="Logo Keynote">
+              <img class="app-logo app-logo-wide"
                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Google_Workspace_Logo.svg"
-                alt="Logo de Google Workspace"
-              >
+                alt="Logo Google Workspace">
             </div>
           </article>
 
-          <article class="tool-card reveal">
-            <h3>Organisation et montage vidéo</h3>
-            <p>Notion, CapCut, Canva</p>
-            <div class="brand-logos" aria-label="Logos outils collaboratifs">
-              <img
-                class="app-logo app-logo-light"
-                src="assets/notion.png"
-                alt="Logo de Notion"
-              >
-              <img
-                class="app-logo app-logo-wide"
-                src="assets/capcut.png"
-                alt="Logo de CapCut"
-              >
-              <img
-                class="app-logo app-logo-wide"
-                src="assets/canva.png"
-                alt="Logo de Canva"
-              >
+          <article class="tool-card">
+            <h3>Organisation et montage</h3>
+            <p class="tool-card-subtitle">Notion, CapCut, Canva</p>
+            <div class="brand-logos" aria-label="Logos des outils de montage vidéo">
+              <img class="app-logo app-logo-light" src="assets/notion.png" alt="Logo Notion">
+              <img class="app-logo app-logo-wide" src="assets/capcut.png" alt="Logo CapCut">
+              <img class="app-logo app-logo-wide" src="assets/canva.png" alt="Logo Canva">
             </div>
           </article>
 
-          <article class="tool-card reveal">
-            <h3>Outils IA et codage</h3>
-            <p>ChatGPT, Gemini, Codex, GitHub, Visual Studio Code</p>
-            <div class="brand-logos" aria-label="Logos outils IA et codage">
-              <img
-                class="app-logo app-logo-light"
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/ChatGPT-Logo.svg"
-                alt="Logo de ChatGPT"
-              >
-              <img
-                class="app-logo app-logo-wide"
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/Google_Gemini_logo_2025.svg"
-                alt="Logo de Gemini"
-              >
-              <span class="app-badge">Codex</span>
-              <img
-                class="app-logo app-logo-wide app-logo-light"
-                src="https://commons.wikimedia.org/wiki/Special:FilePath/GitHub_logo_2013.svg"
-                alt="Logo de GitHub"
-              >
-              <img
-                class="app-logo"
+          <article class="tool-card">
+            <h3>E-commerce</h3>
+            <p class="tool-card-subtitle">Shopify</p>
+            <div class="brand-logos" aria-label="Logo de Shopify">
+              <img class="app-logo app-logo-light app-logo-shopify" src="assets/shopify.png" alt="Logo Shopify">
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <h3>Outils codage</h3>
+            <p class="tool-card-subtitle">Codex, GitHub, Visual Studio Code</p>
+            <div class="brand-logos" aria-label="Logos des outils de codage">
+              <img class="app-logo app-logo-light" src="assets/codex.png" alt="Logo Codex">
+              <img class="app-logo app-logo-wide app-logo-light"
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/GitHub_logo_2013.svg" alt="Logo GitHub">
+              <img class="app-logo"
                 src="https://commons.wikimedia.org/wiki/Special:FilePath/Visual%20Studio%20Code%201.35%20icon.svg"
-                alt="Logo de Visual Studio Code"
-              >
+                alt="Logo Visual Studio Code">
             </div>
           </article>
         </div>
@@ -390,10 +543,60 @@ Cet exercice a mis en pratique mes compétences en organisation et stratégie é
           <article class="experience-card reveal">
             <div class="experience-layout">
               <div class="experience-media">
-                <img
-                  src="assets/parcns.JPG"
-                  alt="Emplacement pour une image du projet Nautique Seine"
-                >
+                <img src="assets/riveagencyphotomoi.HEIC" alt="Photo de Julie TRAN chez Rive Agency">
+              </div>
+
+              <div class="experience-content">
+                <div class="experience-overview">
+                  <div class="experience-top">
+                    <div>
+                      <p class="experience-label">RIVE AGENCY</p>
+                      <h3>Assistante marketing et communication digitale</h3>
+                    </div>
+                    <p class="experience-date">Mars 2026 - Mai 2026</p>
+                  </div>
+
+                  <div class="experience-body">
+                    <div class="experience-main">
+                      <div>
+                        <h4>Contexte</h4>
+                        <p>
+                          Rive Agency est une agence de communication spécialisée dans la création de contenus UGC pour
+                          des restaurants et concepts gastronomiques, avec pour objectif de renforcer leur visibilité
+                          digitale.
+                        </p>
+                        <p>
+                          Dans ce cadre, j’ai participé à l’élaboration de stratégies de contenu adaptées à chaque
+                          établissement, en veillant à proposer des concepts créatifs cohérents avec leur identité.
+                          J’ai notamment rédigé des scripts vidéo, réalisé des tournages et assuré le montage de
+                          contenus destinés aux réseaux sociaux.
+                        </p>
+                        <p>
+                          J’ai également contribué à la gestion des comptes clients, ainsi qu’à la création de supports
+                          visuels comme avec un portfolio pour l’agence et aux pages d’accueil sur les réseaux.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4>Compétences clés développées</h4>
+                      <ul class="arrow-list">
+                        <li>Stratégie de contenu</li>
+                        <li>Rédaction de scripts vidéo</li>
+                        <li>Gestion de comptes clients</li>
+                        <li>Création de supports visuels</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-card reveal">
+            <div class="experience-layout">
+              <div class="experience-media">
+                <img src="assets/parcns.JPG" alt="Emplacement pour une image du projet Nautique Seine">
               </div>
 
               <div class="experience-content">
@@ -411,16 +614,21 @@ Cet exercice a mis en pratique mes compétences en organisation et stratégie é
                       <div>
                         <h4>Contexte</h4>
                         <p>
-                          En équipe de cinq étudiants, notre objectif était d’augmenter la visibilité digitale du club nautique afin de conquérir de nouveaux adhérents, notamment auprès d’une cible plus jeune. 
+                          En équipe de cinq étudiants, notre objectif était d’augmenter la visibilité digitale du club
+                          nautique afin de conquérir de nouveaux adhérents, notamment auprès d’une cible plus jeune.
 
-Je me suis occupée de l’aspect stratégie en créant une charte graphique, un template pour la création de contenus sur Instagram et TikTok, de mesurer la performance des réseaux en analysant les KPI, et pour finir j’ai crée un guide de reporting pour aider le club à reprendre nos actions de communication après notre départ.
+                          Je me suis occupée de l’aspect stratégie en créant une charte graphique, un template pour la
+                          création de contenus sur Instagram et TikTok, de mesurer la performance des réseaux en
+                          analysant les KPI, et pour finir j’ai crée un guide de reporting pour aider le club à
+                          reprendre nos actions de communication après notre départ.
                         </p>
                       </div>
 
                       <div class="experience-results">
                         <h4>Résultats</h4>
                         <p>
-                          <strong>3 207 en novembre à 8 351 en janvier, soit une augmentation de +160 % sur Instagram</strong>
+                          <strong>3 207 en novembre à 8 351 en janvier, soit une augmentation de +160 % sur
+                            Instagram</strong>
                         </p>
                       </div>
                     </div>
@@ -428,8 +636,8 @@ Je me suis occupée de l’aspect stratégie en créant une charte graphique, un
                     <div>
                       <h4>Compétences clés développées</h4>
                       <ul class="arrow-list">
-                        <li>Gestion de projet en équipe</li>
-                        <li>Analyse de performance (KPI)</li>
+                        <li>Gestion de projet</li>
+                        <li>Analyse de performance</li>
                         <li>Stratégie de communication digitale</li>
                         <li>Création de contenus et identité visuelle</li>
                       </ul>
@@ -438,13 +646,13 @@ Je me suis occupée de l’aspect stratégie en créant une charte graphique, un
                 </div>
 
                 <div class="summary-box">
-                  <h4>Résumé du projet avec la fiche synoptique de synthèse</h4>
-                  <div class="wide-visual">
-                    <img
-                      src="assets/fichesynoptique.jpeg"
-                      alt="Emplacement pour le résumé du projet Nautique Seine"
-                    >
-                  </div>
+                </div>
+              </div>
+
+              <div class="summary-box project-summary-box">
+                <h4>Résumé du projet avec la fiche synoptique de synthèse</h4>
+                <div class="wide-visual">
+                  <img src="assets/fichesynoptique.jpeg" alt="Emplacement pour le résumé du projet Nautique Seine">
                 </div>
               </div>
             </div>
@@ -453,10 +661,7 @@ Je me suis occupée de l’aspect stratégie en créant une charte graphique, un
           <article class="experience-card reveal">
             <div class="experience-layout">
               <div class="experience-media">
-                <img
-                  src="assets/boutiquejott.JPG"
-                  alt="Emplacement pour une image de l'expérience JOTT"
-                >
+                <img src="assets/boutiquejott.JPG" alt="Emplacement pour une image de l'expérience JOTT">
               </div>
 
               <div class="experience-content">
@@ -474,9 +679,13 @@ Je me suis occupée de l’aspect stratégie en créant une charte graphique, un
                       <div>
                         <h4>Contexte</h4>
                         <p>
-                          Située dans le Marais, JOTT est une boutique de prêt-à-porter spécialisée dans les doudounes et accueillant une clientèle à la fois locale et internationale. 
+                          Située dans le Marais, JOTT est une boutique de prêt-à-porter spécialisée dans les doudounes
+                          et accueillant une clientèle à la fois locale et internationale.
 
-Mes missions consistaient à accompagner les clients tout au long de leur parcours d’achat (accueil, conseil, encaissement). Afin de préparer la période estivale, j’ai participé à la réception des colis ainsi qu’au renvoi des anciennes collections. J’ai également contribué au réaménagement de la boutique et au merchandising avec la disposition des vêtements.
+                          Mes missions consistaient à accompagner les clients tout au long de leur parcours d’achat
+                          (accueil, conseil, encaissement). Afin de préparer la période estivale, j’ai participé à la
+                          réception des colis ainsi qu’au renvoi des anciennes collections. J’ai également contribué au
+                          réaménagement de la boutique et au merchandising avec la disposition des vêtements.
 
                         </p>
                       </div>
@@ -520,51 +729,48 @@ Mes missions consistaient à accompagner les clients tout au long de leur parcou
         <div class="interests-row">
           <article class="interest-card reveal">
             <h3>Musique</h3>
-            <div class="interest-media">
+            <div class="interest-media interest-media-music">
               <video autoplay muted loop playsinline>
                 <source src="assets/guitare.mov" type="video/quicktime">
                 Votre navigateur ne prend pas en charge la lecture de cette vidéo.
               </video>
             </div>
             <p>
-              J’adore la musique et apprendre par moi-même. Depuis 6 ans, je pratique le piano et j’ai commencé la guitare folk il y a plus d’un an.
+              J’adore la musique et apprendre par moi-même. Depuis 6 ans, je pratique le piano et j’ai commencé la
+              guitare folk il y a plus d’un an.
             </p>
             <p>
-Ces pratiques me permettent de tester ma capacité à progresser seule tout en explorant les styles de musique selon mes préférences.
+              Ces pratiques me permettent de tester ma capacité à progresser seule tout en explorant les styles de
+              musique selon mes préférences.
             </p>
           </article>
 
           <article class="interest-card reveal">
             <h3>Goût pour le sport</h3>
             <div class="interest-media">
-              <img
-                class="interest-sport"
-                src="assets/photo pingpong.jpg.jpg"
-                alt="Photo sport"
-              >
+              <img class="interest-sport" src="assets/photo pingpong.jpg.jpg" alt="Photo sport">
             </div>
             <p>
               Je pratique le tennis de table depuis 8 ans en club et je fais également du volley-ball en loisir.
             </p>
             <p>
-Le sport m’aide à instaurer de la discipline dans mon quotidien et à partager des valeurs communes avec d’autres personnes.
+              Le sport m’aide à instaurer de la discipline dans mon quotidien et à partager des valeurs communes avec
+              d’autres personnes.
             </p>
           </article>
 
           <article class="interest-card reveal">
             <h3>Danse</h3>
             <div class="interest-media">
-              <img
-                class="interest-dance"
-                src="assets/photojapanexpo.png.png"
-                alt="Photo danse"
-              >
+              <img class="interest-dance" src="assets/photojapanexpo.png.png" alt="Photo danse">
             </div>
             <p>
               J’aime particulièrement le style hip-hop et je danse dans un groupe depuis septembre 2024.
             </p>
             <p>
-Nous organisons des projets de danse et nous nous produisons sur YouTube ainsi qu’à travers des prestations récemment.
+              Nous organisons des projets de danse et nous nous produisons sur YouTube ainsi qu’à travers des
+              prestations récemment.
+            </p>
           </article>
         </div>
       </div>
@@ -586,17 +792,14 @@ Nous organisons des projets de danse et nous nous produisons sur YouTube ainsi q
             <strong>06 60 14 73 41</strong>
           </a>
 
-          <a
-            class="contact-card linkedin-card"
-            href="https://www.linkedin.com/in/tranjulie0"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Voir le profil LinkedIn de Julie TRAN"
-          >
+          <a class="contact-card linkedin-card" href="https://www.linkedin.com/in/tranjulie0" target="_blank"
+            rel="noreferrer" aria-label="Voir le profil LinkedIn de Julie TRAN">
             <span class="contact-label">LinkedIn</span>
             <span class="linkedin-inline">
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M6.94 8.5H3.56V20h3.38zM5.25 7.03a1.97 1.97 0 1 0 0-3.94 1.97 1.97 0 0 0 0 3.94zM20 20h-3.37v-5.6c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V20H9.28V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.2-1.75 3.42 0 4.05 2.25 4.05 5.18z"></path>
+                <path
+                  d="M6.94 8.5H3.56V20h3.38zM5.25 7.03a1.97 1.97 0 1 0 0-3.94 1.97 1.97 0 0 0 0 3.94zM20 20h-3.37v-5.6c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95V20H9.28V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.2-1.75 3.42 0 4.05 2.25 4.05 5.18z">
+                </path>
               </svg>
               <strong>Voir mon profil</strong>
             </span>
@@ -615,4 +818,5 @@ Nous organisons des projets de danse et nous nous produisons sur YouTube ainsi q
 
   <script src="script.js"></script>
 </body>
+
 </html>
